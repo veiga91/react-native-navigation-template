@@ -1,0 +1,20 @@
+{
+  "name": "react-native-navigation-template",
+  "version": "1.0.0",
+  "description": "A React Native Template with React Native navigation as router",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/veiga91/react-native-navigation-template.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/veiga91/react-native-navigation-template/issues"
+  },
+  "homepage": "https://github.com/veiga91/react-native-navigation-template#readme"
+}
