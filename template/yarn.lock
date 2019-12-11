@@ -5003,6 +5003,11 @@ react-lifecycles-compat@2.0.0:
   resolved "https://registry.yarnpkg.com/react-lifecycles-compat/-/react-lifecycles-compat-2.0.0.tgz#71d9c4cde47114c4102454f76da055c2bc48c948"
   integrity sha512-txfpPCQYiazVdcbMRhatqWKcAxJweUu2wDXvts5/7Wyp6+Y9cHojqXHsLPEckzutfHlxZhG8Oiundbmp8Fd6eQ==
 
+react-native-navigation-hooks@^3.3.1:
+  version "3.3.1"
+  resolved "https://registry.yarnpkg.com/react-native-navigation-hooks/-/react-native-navigation-hooks-3.3.1.tgz#a7bac76d1fb9252afe4e474e16483a9cac0c2b7e"
+  integrity sha512-OSB36HEha/baXE/wFpEQkTbTwq2G9rX7Q+ywQuBXl6HhmTqUzq3zmcrk6I8WifOAWe7qw0T3Q1LmjpINRs1XuQ==
+
 react-native-navigation@^4.0.4:
   version "4.0.4"
   resolved "https://registry.yarnpkg.com/react-native-navigation/-/react-native-navigation-4.0.4.tgz#d5c623c4330c8831335baad36e3bd0bbf0e4aded"
