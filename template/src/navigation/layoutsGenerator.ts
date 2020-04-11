@@ -1,8 +1,10 @@
-import { LayoutStack, LayoutBottomTabs, LayoutTabsChildren } from "react-native-navigation";
-import { ICreateStack, ICreateBottomTabs, IStackChildrenMap } from './navigation.interface';
+import { LayoutTabsChildren, LayoutStackChildren } from "react-native-navigation";
+import { ICreateStack, ICreateBottomtabs, IBottomTabsMapChildrenFunction, IStackMapChildrenFunction } from './navigation.interface';
 
-export const createStack = ({ names }: ICreateStack): LayoutStack => {
-  const mappedChildren = names.map((name): IStackChildrenMap => ({ component: { name } }));
+export const createStack: ICreateStack = ({ names }) => {
+  const mapStackChildren: IStackMapChildrenFunction = (name) => ({ component: { name } });
+  
+  const mappedChildren: LayoutStackChildren[] = names.map(mapStackChildren);
 
   return {
     children: mappedChildren
@@ -10,8 +12,8 @@ export const createStack = ({ names }: ICreateStack): LayoutStack => {
 };
 
 
-export const createBottomTabs = (id: string, tabs: ICreateBottomTabs[]): LayoutBottomTabs => {
-  const mappedChildren = tabs.map((tab):LayoutTabsChildren => (
+export const createBottomTabs: ICreateBottomtabs = (id, tabs) => {
+  const mapTabsChildren: IBottomTabsMapChildrenFunction = (tab) => (
     {
       stack: {
         id: tab.id,
@@ -23,7 +25,9 @@ export const createBottomTabs = (id: string, tabs: ICreateBottomTabs[]): LayoutB
         }
       }
     }
-  ));
+  );
+
+  const mappedChildren: LayoutTabsChildren[] = tabs.map(mapTabsChildren);
 
   return {
     id,
